@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Pro Gatsby Blog`,
+    siteUrl: `http://localhost:9000`,
     description: `Learning Gatsby 2 with Level Up Tutorials`,
     author: `@gatsbyjs`,
   },
@@ -21,11 +22,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pro-gatsby-level-up`,
+        short_name: `ProGatBlog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#524763`,
+        theme_color: `#524763`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -47,6 +48,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`, // Needs to be last in array
